@@ -1,0 +1,18 @@
+---
+- hosts: vagrant
+  sudo: yes
+  pre_tasks:
+  - apt: update_cache=yes cache_valid_time=3600
+  - name: install vagrant packages
+    apt: name={{ item }} state=present
+    with_items:
+    - avahi-daemon
+    - vim
+    tags:
+    - provision
+
+  roles:
+  - {
+      role: angstwad.docker_ubuntu,
+      pip_version_docker_py: 1.1
+    }

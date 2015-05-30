@@ -1,0 +1,9 @@
+.vagrant
+*.log
+*.mo
+*.pot
+.DS_Store
+*.pyc
+*.pyo
+dist/
+build/

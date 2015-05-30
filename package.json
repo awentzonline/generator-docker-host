@@ -1,0 +1,10 @@
+{
+  "name": "generator-docker-host",
+  "version": "0.0.1",
+  "description": "Generates a docker host with vagrant.",
+  "author": "Adam Wentz",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.17.7"
+  }
+}
